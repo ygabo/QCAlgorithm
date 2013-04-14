@@ -265,7 +265,7 @@ namespace QuantConnect {
         /// <summary>
         /// Set the Transaction Models: allow user to override the default transaction models
         /// </summary>
-        public void SetModels() 
+        public virtual void SetModels() 
         {
             try
             {
