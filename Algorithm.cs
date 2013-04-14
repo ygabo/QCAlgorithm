@@ -261,8 +261,6 @@ namespace QuantConnect {
             {
                 //Define the transaction and fill models we'd like our securities to use.
                 //Users can generate their own models by implementing the Interface ISecurityTransactionModel.
-                EquityModel = new EquityTransactionModel();
-                ForexModel = new ForexTransactionModel();
 
                 foreach (string symbol in Securities.Keys)
                 {
@@ -270,12 +268,12 @@ namespace QuantConnect {
                     {
                         //Currently only have equity data.
                         case SecurityType.Equity:
-                            Securities[symbol].Model = EquityModel;
+                            Securities[symbol].Model = new EquityTransactionModel();
                             break;
 
                         //FOREX data coming soon.
                         case SecurityType.FOREX:
-                            Securities[symbol].Model = ForexModel;
+                            Securities[symbol].Model = new ForexTransactionModel();
                             break;
                     }
                 }

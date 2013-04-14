@@ -27,7 +27,6 @@ namespace QuantConnect  {
     /// </summary>
     public interface IAlgorithm {
 
-
         /******************************************************** 
         * INTERFACE PROPERTIES:
         *********************************************************/
@@ -39,8 +38,6 @@ namespace QuantConnect  {
             set;
         }
 
-
-
         /// <summary>
         /// Security Object Collection Class
         /// </summary>
@@ -48,7 +45,6 @@ namespace QuantConnect  {
             get; 
             set; 
         }
-
 
         /// <summary>
         /// Security Portfolio Management Class:
@@ -58,7 +54,6 @@ namespace QuantConnect  {
             set; 
         }
 
-
         /// <summary>
         /// Security Transaction Processing Class.
         /// </summary>
@@ -66,26 +61,6 @@ namespace QuantConnect  {
             get; 
             set;
         }
-
-
-
-        /// <summary>
-        /// Equity Security Transaction Fee and Fill Models.
-        /// </summary>
-        ISecurityTransactionModel EquityModel {
-            get;
-            set;
-        }
-
-
-        /// <summary>
-        /// Forex Security Transaction Fees and Fill Models
-        /// </summary>
-        ISecurityTransactionModel ForexModel {
-            get; 
-            set; 
-        }
-
 
         /// <summary>
         /// Set a public name for the algorithm.
@@ -102,14 +77,12 @@ namespace QuantConnect  {
             get;
         }
 
-
         /// <summary>
         /// Get Requested Simulation Start Date
         /// </summary>
         DateTime StartDate {
             get;
         }
-
 
         /// <summary>
         /// Get Requested Simulation End Date
@@ -118,14 +91,12 @@ namespace QuantConnect  {
             get;
         }
 
-
         /// <summary>
         /// Accessor for Filled Orders:
         /// </summary>
         Dictionary<int, Order> Orders {
             get;
         }
-
 
         /// <summary>
         /// Run Simulation Mode for the algorithm: Automatic, Parallel or Series.
@@ -134,14 +105,12 @@ namespace QuantConnect  {
             get;
         }
 
-
         /// <summary>
         /// Indicator if the algorithm has been initialised already. When this is true cash and securities cannot be modified.
         /// </summary>
         bool Locked {
             get;
         }
-
 
         /******************************************************** 
         * INTERFACE METHODS
