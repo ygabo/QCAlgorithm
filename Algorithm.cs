@@ -390,6 +390,22 @@ namespace QuantConnect {
             return _debugMessages;
         }
 
+
+
+        /// <summary>
+        /// Add specified data to required list. QC will funnel this data to the handle data routine.
+        /// This is a backwards compatibility wrapper function.
+        /// </summary>
+        /// <param name="securityType">MarketType Type: Equity, Commodity, Future or FOREX</param>
+        /// <param name="symbol">Symbol Reference for the MarketType</param>
+        /// <param name="resolution">Resolution of the Data Required</param>
+        /// <param name="fillDataForward">When no data available on a tradebar, return the last data that was generated</param>
+        public void AddSecurity(SecurityType securityType, string symbol, Resolution resolution = Resolution.Minute, bool fillDataForward = true)
+        {
+            AddSecurity(securityType, symbol, resolution, fillDataForward, 0);
+        }
+
+
         /// <summary>
         /// Add specified data to required list. QC will funnel this data to the handle data routine.
         /// </summary>
@@ -398,9 +414,10 @@ namespace QuantConnect {
         /// <param name="resolution">Resolution of the Data Required</param>
         /// <param name="fillDataForward">When no data available on a tradebar, return the last data that was generated</param>
         /// <param name="leverage">Custom leverage per security</param>
-        public void AddSecurity(SecurityType securityType, string symbol, Resolution resolution = Resolution.Minute, bool fillDataForward = true, decimal leverage = 0) 
+        public void AddSecurity(SecurityType securityType, string symbol, Resolution resolution, bool fillDataForward, decimal leverage) 
         {
-            try {
+            try
+            {
                 if (!_locked) {
                     symbol = symbol.ToUpper();
 

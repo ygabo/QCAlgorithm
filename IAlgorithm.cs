@@ -211,7 +211,7 @@ namespace QuantConnect  {
         /// <param name="resolution">Resolution of the MarketType required: MarketData, Second or Minute</param>
         /// <param name="fillDataForward">If true, returns the last available data even if none in that timeslice.</param>
         /// <param name="leverage">leverage for this security</param>
-        void AddSecurity(SecurityType securityType, string symbol, Resolution resolution, bool fillDataForward = true, decimal leverage = 0);
+        void AddSecurity(SecurityType securityType, string symbol, Resolution resolution, bool fillDataForward, decimal leverage);
 
 
         /// <summary>
