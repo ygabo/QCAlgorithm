@@ -52,16 +52,6 @@ namespace QuantConnect {
         public SecurityTransactionManager Transacions { get; set; }
 
         /// <summary>
-        /// Equity Transaction Model 
-        /// </summary>
-        public virtual ISecurityTransactionModel EquityModel { get; set; }
-
-        /// <summary>
-        /// FOREX Transaction Model
-        /// </summary>
-        public virtual ISecurityTransactionModel ForexModel { get; set; }
-
-        /// <summary>
         /// Generic Data Manager - Required for compiling all data feeds in order,
         /// and passing them into algorithm event methods.
         /// </summary>
