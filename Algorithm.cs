@@ -44,11 +44,18 @@ namespace QuantConnect {
         *********************************************************/
 
         /// <summary>
-        /// Securities Entities 
-        /// --> Managers group and offer meta data analysis e.g. portfolio.
+        /// Security Object Collection
         /// </summary>
         public SecurityManager Securities { get; set; }
+
+        /// <summary>
+        /// Portfolio Adaptor/Wrapper: Easy access to securities holding properties:
+        /// </summary>
         public SecurityPortfolioManager Portfolio { get; set; }
+
+        /// <summary>
+        /// Transaction Manager - Process transaction fills and order management.
+        /// </summary>
         public SecurityTransactionManager Transacions { get; set; }
 
         /// <summary>
@@ -216,6 +223,13 @@ namespace QuantConnect {
         public virtual void OnEstimize(Dictionary<string, List<Estimize>> estimates) {
             //Estimize Implementation
             throw new NotImplementedException("Please override the OnEstimize() method");
+        }
+
+        /// <summary>
+        /// Call this method at the end of the algorithm.
+        /// </summary>
+        public virtual void OnExitSimulation() {
+
         }
 
         /// <summary>

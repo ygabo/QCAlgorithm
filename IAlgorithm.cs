@@ -150,6 +150,11 @@ namespace QuantConnect  {
 
 
         /// <summary>
+        /// Call this method at the end of the algorithm.
+        /// </summary>
+        void OnExitSimulation();
+
+        /// <summary>
         /// Set the DateTime Frontier: This is the master time and is 
         /// </summary>
         /// <param name="time"></param>
