@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2545C0B4-FABB-49C9-8DD1-9AD7EE23F86B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuantConnect.Common</RootNamespace>
+    <AssemblyName>QuantConnect.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\QuantConnect.Common.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Mono|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Mono\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AWSSDK, Version=1.4.15.1, Culture=neutral, PublicKeyToken=cd2d24cd2bace800, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\AWSSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>.\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data">
+      <HintPath>.\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data.entity">
+      <HintPath>.\mysql.data.entity.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.visualstudio">
+      <HintPath>.\mysql.visualstudio.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.web">
+      <HintPath>.\mysql.web.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>.\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DataManager.cs" />
+    <Compile Include="Data\DataBase.cs" />
+    <Compile Include="Data\Market\Tick.cs" />
+    <Compile Include="Data\Market\TradeBar.cs" />
+    <Compile Include="Data\Market\Market.cs" />
+    <Compile Include="Data\Sentiment\StockPulse.cs" />
+    <Compile Include="Data\Sentiment\Estimize.cs" />
+    <Compile Include="Data\Sentiment\Sentiment.cs" />
+    <Compile Include="Isolator.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Loader.cs" />
+    <Compile Include="Math\Math.cs" />
+    <Compile Include="Math\Math.StandardDeviation.cs" />
+    <Compile Include="Orders\OrderModels.cs" />
+    <Compile Include="Securities\Equity\Equity.cs" />
+    <Compile Include="Securities\Equity\EquityCache.cs" />
+    <Compile Include="Securities\Equity\EquityExchange.cs" />
+    <Compile Include="Securities\Equity\EquityHolding.cs" />
+    <Compile Include="Securities\Equity\EquityTransactionModel.cs" />
+    <Compile Include="Securities\Forex\Forex.cs" />
+    <Compile Include="Securities\Forex\ForexCache.cs" />
+    <Compile Include="Securities\Forex\ForexExchange.cs" />
+    <Compile Include="Securities\Forex\ForexHolding.cs" />
+    <Compile Include="Securities\Forex\ForexTransactionModel.cs" />
+    <Compile Include="Securities\ISecurityTransactionModel.cs" />
+    <Compile Include="Securities\Security.cs" />
+    <Compile Include="Securities\SecurityCache.cs" />
+    <Compile Include="Securities\SecurityExchange.cs" />
+    <Compile Include="Securities\SecurityHolding.cs" />
+    <Compile Include="Securities\SecurityManager.cs" />
+    <Compile Include="Securities\SecurityPortfolioManager.cs" />
+    <Compile Include="Securities\SecurityTransactionManager.cs" />
+    <Compile Include="Statistics\Statistics.cs" />
+    <Compile Include="OS.cs" />
+    <Compile Include="Time.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuantConnect.Logging\QuantConnect.Logging.csproj">
+      <Project>{01911409-86BE-4E7D-9947-DF714138610D}</Project>
+      <Name>QuantConnect.Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
