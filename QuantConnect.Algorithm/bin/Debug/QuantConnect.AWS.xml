@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuantConnect.AWS</name>
+    </assembly>
+    <members>
+        <member name="T:QuantConnect.AWS.QueuePacket.QueuePacket">
+            <summary>
+            Common Queue Packet Class for common variable requirements:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.QueuePacket.QueuePacket.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+            Initialise the AWS Instance:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.QueuePacket.QueuePacket.#ctor">
+            <summary>
+            Default constructor:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.QueuePacket.QueuePacket.GetType(System.String)">
+            <summary>
+            Get the type of the queue packet:
+            </summary>
+            <returns>string sType</returns>
+        </member>
+        <member name="P:QuantConnect.AWS.QueuePacket.QueuePacket.IsInitialized">
+            <summary>
+            Check if the Packet has been initialized properly: userId = 0 = No.
+            </summary>
+        </member>
+        <member name="T:QuantConnect.AWS.QueuePacket.AlgorithmWorkPacket">
+            <summary>
+            Store Algorithm Worker Jobs
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.QueuePacket.AlgorithmWorkPacket.#ctor(System.Int32,System.Int32,System.String,System.String,System.DateTime,System.Decimal)">
+            <summary>
+            Initialise Algorithm Worker Job Packet
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.QueuePacket.AlgorithmWorkPacket.#ctor(QuantConnect.AWS.QueuePacket.SimulatorWorkPacket,System.DateTime,System.String)">
+            <summary>
+            Initialise a Simulator Work Packet:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.QueuePacket.AlgorithmWorkPacket.#ctor(System.String)">
+            <summary>
+            Decode a JSON packet:
+            </summary>
+            <param name="json"></param>
+        </member>
+        <member name="M:QuantConnect.AWS.Instance.QCInstance.#ctor(Amazon.EC2.Model.RunningInstance)">
+            <summary>
+            Initialise the AWS Instance:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.Instance.QCInstance.GetInstanceOnline">
+            <summary>
+            Get the Current State of the Worker:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.Instance.QCInstance.GetInstanceState">
+            <summary>
+            Get the instance state from the API.
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.Instance.QCInstance.Shutdown">
+            <summary>
+            Shutdown this instance:
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.Instance.QCInstance.InstanceId">
+            <summary>
+            Instance ID: Access to instance.
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.Instance.QCInstance.Address">
+            <summary>
+            This AWS Instance DNS Name
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.Instance.QCInstance.ServerOnlineURL">
+            <summary>
+            Get the state URL for 
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.Instance.QCInstance.ServerStateURL">
+            <summary>
+            Get the state URL for 
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.Instance.QCInstance.ServerOnline">
+            <summary>
+            Simple wrapper for server response code:
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.Instance.QCInstance.ServerIdle">
+            <summary>
+            Get the Server Idle State:
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.Instance.QCInstance.IdleTime">
+            <summary>
+            Get the server idle time for spindown.
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.Instance.QCInstance.State">
+            <summary>
+            Return a busy/idle indicator.
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.Instance.QCInstance.ServerOnlineResponse">
+            <summary>
+            Get the server online/offline state: 200 OK, or 404 NOT FOUND.
+            </summary>
+        </member>
+        <member name="T:QuantConnect.AWS.EC2Helper">
+            <summary>
+            Static Class for EC2 Helpers
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.EC2Helper.StartInstance(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Start up a new instance with the supplied image:
+            </summary>
+            <returns>String ID of Instance</returns>
+        </member>
+        <member name="M:QuantConnect.AWS.EC2Helper.ShutdownInstance(System.String)">
+            <summary>
+            Shutdown the worker with this ID:
+            </summary>
+            <param name="sInstanceID">A single instance ID </param>
+        </member>
+        <member name="M:QuantConnect.AWS.EC2Helper.ShutdownInstances(System.String[])">
+            <summary>
+            Shutdown an array of instances:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.EC2Helper.RefreshInstance(Amazon.EC2.Model.RunningInstance@)">
+            <summary>
+            Refresh a running instance information:
+            </summary>
+            <param name="cInstance">Instance loading up.</param>
+        </member>
+        <member name="M:QuantConnect.AWS.EC2Helper.GetAllRunningInstances">
+            <summary>
+            Get a list of all the running instances:
+            </summary>
+        </member>
+        <member name="T:QuantConnect.AWS.QueuePacket.SimulatorResultPacket">
+            <summary>
+            Simulator Result Packet:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.QueuePacket.SimulatorResultPacket.#ctor(System.String)">
+            <summary>
+            Compose the packet from a JSON string array:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.QueuePacket.SimulatorResultPacket.#ctor(QuantConnect.AWS.QueuePacket.AlgorithmWorkPacket,System.String,System.Decimal,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Compose Result Data Packet
+            </summary>
+            <param name="job">Job that started this request</param>
+            <param name="progress">Progress of the simulation job</param>
+            <param name="resultUrl">Location of the final simulation</param>
+            <param name="results"> Dynamic data lost after simulations, used for showing the results dynamically.</param>
+        </member>
+        <member name="P:QuantConnect.AWS.QueuePacket.SimulatorResultPacket.Progress">
+            <summary>
+            Progress Formatted as a String.
+            </summary>
+        </member>
+        <member name="T:QuantConnect.AWS.QueuePacket.CompilerWorkPacket">
+            <summary>
+            Store Compiler Worker Jobs
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.QueuePacket.CompilerWorkPacket.#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Constructor for Compilation.
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.QueuePacket.CompilerWorkPacket.#ctor(System.String,System.String)">
+            <summary>
+            JSON Constructor
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.AWS.Initialize(System.String,System.String,System.String)">
+            <summary>
+            Constructor with basic login information for AWS.
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.AWS.SerializeXMLObject``1(``0)">
+            <summary>
+            Convert an object to string: 
+            </summary>
+            <typeparam name="T">Type of Object</typeparam>
+            <param name="toSerialize">Object to Serialize</param>
+            <returns>Serial String</returns>
+        </member>
+        <member name="M:QuantConnect.AWS.AWS.DeserializeXMLObject``1(System.String)">
+            <summary>
+            Convert String to Object
+            </summary>
+            <typeparam name="T">Type of Object</typeparam>
+            <param name="sXML">XML message</param>
+            <returns>Deserialized object</returns>
+        </member>
+        <member name="P:QuantConnect.AWS.AWS.AccessKey">
+            <summary>
+            Read Only AccessKey Property.
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.AWS.SecretKey">
+            <summary>
+            Read Only Secret Key Property.
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.AWS.userId">
+            <summary>
+            Read Only UserID Property.
+            </summary>
+        </member>
+        <member name="T:QuantConnect.AWS.SQSHelper">
+            <summary>
+            Static Class for SQS Helpers
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.SQSHelper.#ctor(System.String,System.String)">
+            <summary>
+            Initialise SQS Helper Class:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.SQSHelper.AddToQueue(System.String)">
+            <summary>
+            Add this object to the SQS Queue 
+            </summary>
+            <param name="message">Object to serialize and add to queue</param>
+        </member>
+        <member name="M:QuantConnect.AWS.SQSHelper.AddBatchToQueue(System.String[])">
+            <summary>
+            Add a batch of messages to the SQS queue:
+            </summary>
+            <param name="data">A string array of messages</param>
+        </member>
+        <member name="M:QuantConnect.AWS.SQSHelper.GetFromQueue(System.Int32)">
+            <summary>
+            Get the next message from the AWS queue:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.SQSHelper.GetQueueLength">
+            <summary>
+            Get the number of messages in this queue:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.SQSHelper.RemoveFromQueue(System.String)">
+            <summary>
+            Remove an item from the AWS queue.
+            </summary>
+            <param name="queueReceiptHandle">AWS Queue ID of item to remove</param>
+        </member>
+        <member name="P:QuantConnect.AWS.SQSHelper.QueueUrl">
+            <summary>
+            Data Queue URL:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.Instance.InstanceWorker.#ctor(Amazon.EC2.Model.RunningInstance)">
+            <summary>
+            Initialise the AWS Instance:
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.Instance.InstanceWorker.FlagForRemoval">
+            <summary>
+            Flag this instance for removal from lsit in the next iteration:
+            </summary>
+        </member>
+        <member name="T:QuantConnect.AWS.QueuePacket.SimulatorWorkPacket">
+            <summary>
+            Simulator Work Packet:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.QueuePacket.SimulatorWorkPacket.#ctor(System.String,System.String)">
+            <summary>
+            Initialise a Simulator Work Packet:
+            </summary>
+        </member>
+        <member name="P:QuantConnect.AWS.QueuePacket.SimulatorWorkPacket.WorkPacketCount">
+            <summary>
+            The number of work packets to splinter this job into:
+            </summary>
+        </member>
+        <member name="T:QuantConnect.AWS.S3Helper">
+            <summary>
+            Static Class for S3 Helpers
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.S3Helper.S3ObjectExists(System.String)">
+            <summary>
+            Check if a S3 Object Exists
+            </summary>
+            <param name="bucket">Bucket to search</param>
+            <param name="key">S3 Location</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:QuantConnect.AWS.S3Helper.DownloadMemory(System.String,System.Int32)">
+            <summary>
+            Download a S3 object to a memory object
+            </summary>
+            <param name="key"></param>
+            <param name="maximumRetries"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantConnect.AWS.S3Helper.Download(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Download the file to local file path:
+            </summary>
+            <param name="key">AWS Key</param>
+            <param name="filePath">Local file path to save to.</param>
+            <param name="maximumRetries">Maximum retries from amazon</param>
+            <param name="minimumSizeBytes">Minimum size of the file for a retry</param>
+        </member>
+        <member name="M:QuantConnect.AWS.S3Helper.UploadFile(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Upload a local file to S3
+            </summary>
+            <param name="localFilePath">Local file path</param>
+            <param name="remoteFilePath">Remote path -- S3 Key</param>
+            <param name="deleteLocalCopyOnCompletion">Delete the local file after upload</param>
+            <param name="asynchronous"></param>
+        </member>
+        <member name="M:QuantConnect.AWS.S3Helper.UploadComplete(System.IAsyncResult)">
+            <summary>
+            Upload of the file complete
+            </summary>
+            <param name="result">Partial result.</param>
+        </member>
+        <member name="M:QuantConnect.AWS.S3Helper.DeleteWorkingFiles(System.String)">
+            <summary>
+            Delete all working files matching location:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.AWS.S3Helper.GetObjectsInBucket(System.String)">
+            <summary>
+            Get all the objects in our bucket location:
+            </summary>
+            <returns>List of string object key names.</returns>
+        </member>
+        <member name="M:QuantConnect.AWS.S3Helper.ToACLString(QuantConnect.AWS.S3ACLType)">
+            <summary>
+            Write properties of the object:
+            </summary>
+        </member>
+        <member name="T:QuantConnect.AWS.ResponseCodePacket">
+            <summary>
+            Generic Worker Response Packet: 
+            </summary>
+        </member>
+        <member name="T:QuantConnect.AWS.SQSName">
+            <summary>
+            SQS Queue Names:
+            </summary>
+        </member>
+        <member name="T:QuantConnect.AWS.S3ACLType">
+            <summary>
+            Get the enum.
+            </summary>
+        </member>
+        <member name="T:QuantConnect.AWS.WorkerImages">
+            <summary>
+            Worker Image Names for Spinning up New Units
+            </summary>
+        </member>
+    </members>
+</doc>

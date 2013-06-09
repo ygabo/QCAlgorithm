@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuantConnect.Server.Algorithm.Interface</name>
+    </assembly>
+    <members>
+        <member name="T:QuantConnect.IAlgorithm">
+            <summary>
+            Interface for Algorithm Class Libraries
+            </summary>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.Initialize">
+            <summary>
+            Initialise the Algorithm and Prepare Required Data:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.OnTradeBar(System.Collections.Generic.Dictionary{System.String,QuantConnect.Models.TradeBar})">
+            <summary>
+            Update the algorithm calculations:
+            </summary>
+            <param name="symbols">Dictionary of TradeBar Data-Objects for this timeslice</param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.OnTick(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{QuantConnect.Models.Tick}})">
+            <summary>
+            Handler for Tick Events
+            </summary>
+            <param name="ticks">Tick Data Packet</param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.OnEstimize(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{QuantConnect.Models.Estimize}})">
+            <summary>
+            A crowd sourced earnings estimate.
+            </summary>
+            <param name="estimates">Earning estimate signal from a user</param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.OnStockPulse(System.Collections.Generic.Dictionary{System.String,QuantConnect.Models.StockPulse})">
+            <summary>
+            Twitter Sentiment Estimate
+            </summary>
+            <param name="reports">Individual stock pulse for this timeslice</param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.OnEndOfDay">
+            <summary>
+            Call this method at the end of the algorithm.
+            </summary>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.SetDateTime(System.DateTime)">
+            <summary>
+            Set the DateTime Frontier: This is the master time and is 
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.SetRunMode(QuantConnect.RunMode)">
+            <summary>
+            Set the run mode of the algorithm: series, parallel or automatic.
+            </summary>
+            <param name="mode">Run mode to select, default Automatic</param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.SetStartDate(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Set the start date of the simulation period. This must be within available data.
+            </summary>
+            <param name="year">Year to start simulation</param>
+            <param name="month">Month to start simulation</param>
+            <param name="day">Date to start simulation</param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.SetEndDate(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Set the end simulation date for the algorithm. This must be within available data.
+            </summary>
+            <param name="year">integer year to end simulation period</param>
+            <param name="month">integer month to end simulation period</param>
+            <param name="day">integer day to end simulation period</param>
+            <exception cref="!:not found">Error thrown When date is invalid</exception>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.SetModels">
+            <summary>
+            Set the Transaction Models to use:
+            </summary>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.SetLocked">
+            <summary>
+            Set the algorithm as initialized and locked. No more cash or security changes.
+            </summary>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.GetDebugMessages">
+            <summary>
+            Get a list of the debug messages sent so far.
+            </summary>
+            <returns>List of string debug messages.</returns>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.AddSecurity(QuantConnect.SecurityType,System.String,QuantConnect.Resolution,System.Boolean,System.Decimal,System.Boolean)">
+            <summary>
+            Set a required MarketType-symbol and resolution for the simulator to prepare
+            </summary>
+            <param name="securityType">MarketType Enum: Equity, Commodity, FOREX or Future</param>
+            <param name="symbol">Symbol Representation of the MarketType, e.g. AAPL</param>
+            <param name="resolution">Resolution of the MarketType required: MarketData, Second or Minute</param>
+            <param name="fillDataForward">If true, returns the last available data even if none in that timeslice.</param>
+            <param name="leverage">leverage for this security</param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.AddSentimentData(QuantConnect.SentimentDataType,System.String)">
+            <summary>
+            Add sentiment data to your algorithm.
+            </summary>
+            <param name="sentimentType">Type of sentiment: estimize or stockpulse</param>
+            <param name="symbol">String symbol of asset you're requesting</param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.SetCash(System.Decimal)">
+            <summary>
+            Set the starting capital for the strategy
+            </summary>
+            <param name="startingCash">decimal starting capital, default $100,000</param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.Order(System.String,System.Int32,QuantConnect.OrderType)">
+            <summary>
+            Send an order to the transaction manager.
+            </summary>
+            <param name="symbol">Symbol we want to purchase</param>
+            <param name="quantity">Quantity to buy, + is long, - short.</param>
+            <param name="type">Market, Limit or Stop Order</param>
+            <returns>Integer Order ID.</returns>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.Liquidate(System.String)">
+            <summary>
+            Liquidate your portfolio holdings:
+            </summary>
+            <param name="symbolToLiquidate">Specific asset to liquidate, defaults to all.</param>
+            <returns>list of order ids</returns>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.Quit(System.String)">
+            <summary>
+            Terminate the algorithm on exiting the current event processor. 
+            If have holdings at the end of the algorithm/day they will be liquidated at market prices.
+            If running a series analysis this command skips the current day (and doesn't liquidate).
+            </summary>
+            <param name="message">Exit message</param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.SetQuit(System.Boolean)">
+            <summary>
+            Set the quit flag true / false.
+            </summary>
+            <param name="quit">When true quits the algorithm event loop for this day</param>
+        </member>
+        <member name="M:QuantConnect.IAlgorithm.GetQuit">
+            <summary>
+            Get the quit flag state. 
+            </summary>
+            <returns>Boolean quit flag</returns>
+        </member>
+        <member name="P:QuantConnect.IAlgorithm.DataManager">
+            <summary>
+            Get/Set the Data Manager
+            </summary>
+        </member>
+        <member name="P:QuantConnect.IAlgorithm.Securities">
+            <summary>
+            Security Object Collection Class
+            </summary>
+        </member>
+        <member name="P:QuantConnect.IAlgorithm.Portfolio">
+            <summary>
+            Security Portfolio Management Class:
+            </summary>
+        </member>
+        <member name="P:QuantConnect.IAlgorithm.Transacions">
+            <summary>
+            Security Transaction Processing Class.
+            </summary>
+        </member>
+        <member name="P:QuantConnect.IAlgorithm.Name">
+            <summary>
+            Set a public name for the algorithm.
+            </summary>
+        </member>
+        <member name="P:QuantConnect.IAlgorithm.Time">
+            <summary>
+            Get the current date/time.
+            </summary>
+        </member>
+        <member name="P:QuantConnect.IAlgorithm.StartDate">
+            <summary>
+            Get Requested Simulation Start Date
+            </summary>
+        </member>
+        <member name="P:QuantConnect.IAlgorithm.EndDate">
+            <summary>
+            Get Requested Simulation End Date
+            </summary>
+        </member>
+        <member name="P:QuantConnect.IAlgorithm.Orders">
+            <summary>
+            Accessor for Filled Orders:
+            </summary>
+        </member>
+        <member name="P:QuantConnect.IAlgorithm.RunMode">
+            <summary>
+            Run Simulation Mode for the algorithm: Automatic, Parallel or Series.
+            </summary>
+        </member>
+        <member name="P:QuantConnect.IAlgorithm.Locked">
+            <summary>
+            Indicator if the algorithm has been initialised already. When this is true cash and securities cannot be modified.
+            </summary>
+        </member>
+    </members>
+</doc>

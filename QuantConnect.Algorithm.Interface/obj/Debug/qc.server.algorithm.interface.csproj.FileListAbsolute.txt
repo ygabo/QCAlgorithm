@@ -1,0 +1,12 @@
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\bin\Debug\qc.algorithm.interface.dll
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\bin\Debug\qc.algorithm.interface.pdb
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\bin\Debug\qc.common.dll
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\bin\Debug\MySql.Data.dll
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\bin\Debug\Newtonsoft.Json.dll
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\bin\Debug\qc.common.pdb
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\bin\Debug\Newtonsoft.Json.pdb
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\bin\Debug\Newtonsoft.Json.xml
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\obj\Debug\ResolveAssemblyReference.cache
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\obj\Debug\qc.algorithm.interface.dll
+C:\Server\www\QCo\qc.server.compiler.worker\qc.server.algorithm.interface\obj\Debug\qc.algorithm.interface.pdb
