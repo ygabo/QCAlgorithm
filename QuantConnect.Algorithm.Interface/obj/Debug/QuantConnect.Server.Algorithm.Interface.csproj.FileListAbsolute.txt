@@ -11,3 +11,14 @@ C:\Server\www\QCo\QuantConnect.Server.Compiler.Worker\QuantConnect.Server.Algori
 C:\Server\www\QCo\QuantConnect.Server.Compiler.Worker\QuantConnect.Server.Algorithm.Interface\obj\Debug\QuantConnect.Server.Algorithm.Interface.dll
 C:\Server\www\QCo\QuantConnect.Server.Compiler.Worker\QuantConnect.Server.Algorithm.Interface\obj\Debug\QuantConnect.Server.Algorithm.Interface.pdb
 C:\Server\www\QCo\QuantConnect.Server.Compiler.Worker\QuantConnect.Server.Algorithm.Interface\bin\Debug\QuantConnect.Server.Algorithm.Interface.XML
+C:\Server\www\QCo\QuantConnect.Algorithm.Interface\bin\Debug\QuantConnect.Server.Algorithm.Interface.dll
+C:\Server\www\QCo\QuantConnect.Algorithm.Interface\bin\Debug\QuantConnect.Server.Algorithm.Interface.pdb
+C:\Server\www\QCo\QuantConnect.Algorithm.Interface\bin\Debug\QuantConnect.Common.dll
+C:\Server\www\QCo\QuantConnect.Algorithm.Interface\bin\Debug\QuantConnect.Logging.dll
+C:\Server\www\QCo\QuantConnect.Algorithm.Interface\bin\Debug\QuantConnect.Common.pdb
+C:\Server\www\QCo\QuantConnect.Algorithm.Interface\bin\Debug\QuantConnect.Common.xml
+C:\Server\www\QCo\QuantConnect.Algorithm.Interface\bin\Debug\QuantConnect.Logging.pdb
+C:\Server\www\QCo\QuantConnect.Algorithm.Interface\bin\Debug\QuantConnect.Logging.xml
+C:\Server\www\QCo\QuantConnect.Algorithm.Interface\obj\Debug\ResolveAssemblyReference.cache
+C:\Server\www\QCo\QuantConnect.Algorithm.Interface\obj\Debug\QuantConnect.Server.Algorithm.Interface.dll
+C:\Server\www\QCo\QuantConnect.Algorithm.Interface\obj\Debug\QuantConnect.Server.Algorithm.Interface.pdb

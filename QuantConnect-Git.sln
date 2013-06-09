@@ -5,9 +5,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantConnect.Common", "Quan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantConnect.Logging", "QuantConnect.Logging\QuantConnect.Logging.csproj", "{01911409-86BE-4E7D-9947-DF714138610D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantConnect.Server.Algorithm", "QuantConnect.Algorithm\QuantConnect.Server.Algorithm.csproj", "{3240ACA4-BDD4-4D24-AC36-BBB651C39212}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantConnect.Algorithm", "QuantConnect.Algorithm\QuantConnect.Algorithm.csproj", "{3240ACA4-BDD4-4D24-AC36-BBB651C39212}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantConnect.Server.Algorithm.Interface", "QuantConnect.Algorithm.Interface\QuantConnect.Server.Algorithm.Interface.csproj", "{338F614C-4CD7-418A-BD31-8C6A8690CFBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantConnect.Algorithm.Interface", "QuantConnect.Algorithm.Interface\QuantConnect.Algorithm.Interface.csproj", "{338F614C-4CD7-418A-BD31-8C6A8690CFBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1574,12 +1574,14 @@
             US Public Holidays - Not Tradeable:
             </summary>
         </member>
-        <member name="M:QuantConnect.Statistics.RunOrders(System.Collections.Generic.SortedDictionary{System.DateTime,System.Decimal},System.Collections.Generic.SortedDictionary{System.DateTime,System.Decimal},System.Decimal,System.Double)">
+        <member name="M:QuantConnect.Statistics.Generate(System.Collections.Generic.SortedDictionary{System.DateTime,System.Decimal},System.Collections.Generic.SortedDictionary{System.DateTime,System.Decimal},System.Decimal,System.Double)">
             <summary>
             Run a full set of orders and return a 
             </summary>
             <param name="equity">Equity value over time.</param>
             <param name="profitLoss">profit loss from trades</param>
+            <param name="startingCash">Amount of starting cash in USD </param>
+            <param name="fractionOfYears">Number of years as a double number 1 = 1 year. </param>
             <returns>Statistics Array, Broken into Annual Periods</returns>
         </member>
         <member name="M:QuantConnect.Statistics.ProfitLossRatio(System.Decimal,System.Decimal)">

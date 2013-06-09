@@ -3,4 +3,3 @@ C:\Server\www\QCo\QuantConnect.Logging\bin\Debug\QuantConnect.Logging.pdb
 C:\Server\www\QCo\QuantConnect.Logging\obj\Debug\ResolveAssemblyReference.cache
 C:\Server\www\QCo\QuantConnect.Logging\obj\Debug\QuantConnect.Logging.dll
 C:\Server\www\QCo\QuantConnect.Logging\obj\Debug\QuantConnect.Logging.pdb
-C:\Server\www\QCo\QuantConnect.Logging\bin\Debug\QuantConnect.Logging.XML

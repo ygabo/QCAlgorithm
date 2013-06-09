@@ -4,6 +4,11 @@
         <name>QuantConnect.Server.Algorithm</name>
     </assembly>
     <members>
+        <member name="T:QuantConnect.MyAlgorithm">
+            <summary>
+            Example user algorithm class - use this as a base point for your strategy.
+            </summary>
+        </member>
         <member name="T:QuantConnect.QCAlgorithm">
             <summary>
             QC Algorithm Base Class - Handle the basic requirement of a trading algorithm, 
@@ -247,6 +252,17 @@
             <summary>
             Check if the algorithm is locked from any further init changes.
             </summary>
+        </member>
+        <member name="M:QuantConnect.MyAlgorithm.Initialize">
+            <summary>
+            Initialise your algorithm here.
+            </summary>
+        </member>
+        <member name="M:QuantConnect.MyAlgorithm.OnTradeBar(System.Collections.Generic.Dictionary{System.String,QuantConnect.Models.TradeBar})">
+            <summary>
+            Handle your tradeBar's here.
+            </summary>
+            <param name="symbols">Dictionary of data objects</param>
         </member>
     </members>
 </doc>

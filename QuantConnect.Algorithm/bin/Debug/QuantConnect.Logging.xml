@@ -4,19 +4,17 @@
         <name>QuantConnect.Logging</name>
     </assembly>
     <members>
-        <member name="M:QuantConnect.Logging.Log.Error(System.String,System.Boolean)">
+        <member name="M:QuantConnect.Logging.Log.Error(System.String)">
             <summary>
             Log an Error
             </summary>
             <param name="error">String Error</param>
-            <param name="output">output to screen</param>
         </member>
-        <member name="M:QuantConnect.Logging.Log.Trace(System.String,System.Boolean)">
+        <member name="M:QuantConnect.Logging.Log.Trace(System.String)">
             <summary>
             Log a Trace Message
             </summary>
             <param name="traceText">String Trace</param>
-            <param name="output">Output to screen - default true</param>
         </member>
         <member name="M:QuantConnect.Logging.Log.Debug(System.String,System.Int32,System.Int32)">
             <summary>
@@ -24,14 +22,6 @@
             </summary>
             <param name="text"></param>
             <param name="delay"></param>
-        </member>
-        <member name="M:QuantConnect.Logging.Log.Save(System.String,System.Boolean,System.String)">
-            <summary>
-            Log a string to the program log file.
-            </summary>
-            <param name="entry">String to record.</param>
-            <param name="attachDatestamp">Attached a date time stamp - default true</param>
-            <param name="logPath">Path to log file</param>
         </member>
         <member name="M:QuantConnect.Logging.Log.VarDump(System.Object,System.Int32)">
             <summary>
@@ -54,21 +44,6 @@
         <member name="P:QuantConnect.Logging.Log.DebuggingLevel">
             <summary>
             Set the minimum message level:
-            </summary>
-        </member>
-        <member name="T:QuantConnect.Logging.Log.Files">
-            <summary>
-            File Save Location
-            </summary>
-        </member>
-        <member name="P:QuantConnect.Logging.Log.Files.ErrorLogFile">
-            <summary>
-            Error Log File:
-            </summary>
-        </member>
-        <member name="P:QuantConnect.Logging.Log.Files.TraceLogFile">
-            <summary>
-            Trace Log File:
             </summary>
         </member>
     </members>

@@ -43,10 +43,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\QuantConnect.AWS\QuantConnect.AWS.csproj">
-      <Project>{CA1D9BD7-1997-4C57-8A69-8202EB81B463}</Project>
-      <Name>QuantConnect.AWS</Name>
-    </ProjectReference>
     <ProjectReference Include="..\QuantConnect.Common\QuantConnect.Common.csproj">
       <Project>{2545C0B4-FABB-49C9-8DD1-9AD7EE23F86B}</Project>
       <Name>QuantConnect.Common</Name>
