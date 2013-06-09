@@ -1,7 +1,7 @@
 ﻿/*
 * QUANTCONNECT.COM - 
 * QC.Algorithm - Base Class for Algorithm.
-* Algorithm MarketType Manager - Collection of Securities
+* Market Data base class. A market data object is data of a tradable asset, you can build a portfolio of market items.
 */
 
 /**********************************************************
@@ -10,8 +10,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using QuantConnect;
 using QuantConnect.Logging;

@@ -1,6 +1,6 @@
 /*
-	STOCKTRACK.ORG - Automated Stock Trading, V0.8
-		Created Jan 2010 by Jared Broad
+* QUANTCONNECT.COM: FOREX Security
+* FOREX Cache Class - Base caching class for FX Objects. Store historical ticks, chart points etc
 */
 
 /**********************************************************

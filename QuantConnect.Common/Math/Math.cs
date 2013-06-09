@@ -1,23 +1,15 @@
 /*
-*       QUANTCONNECT.COM - 
-*       QC.Math Library of Statistics Routines for Algorithm
-*       Created by Jared Broad 19th November 2012
+* QUANTCONNECT.COM - Extension routines for QC.
+* QC.Math Library of Statistics Routines for Algorithm
 */
 
 /**********************************************************
  * USING NAMESPACES
  **********************************************************/
 using System;
-using System.Data;
-using System.Text;
-using System.IO;
 using System.Linq;
-using System.Diagnostics;
 using System.Collections.Generic;
-using System.Collections;
 using System.Globalization;
-using System.Threading;
-using System.Threading.Tasks;
 
 //QuantConnect Project Libraries:
 using QuantConnect.Logging;
@@ -37,14 +29,6 @@ namespace QuantConnect {
         public static readonly decimal InvPhi = 0.6180339887498948482m;
         public static readonly decimal Phi618 = 0.6180339887498948482m;
         public static readonly decimal Phi381 = 0.5819660112501051518m;
-
-        //Static Connection to R:
-        //public static StatConnector rConnection;
-        //private static bool bConnected = false;
-
-        /******************************************************** 
-        * CONSTRUCTOR/DELEGATE DEFINITIONS
-        *********************************************************/
 
         /******************************************************** 
         * CLASS METHODS

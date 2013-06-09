@@ -1,6 +1,6 @@
 /*
-	STOCKTRACK.ORG - Automated Stock Trading, v0.9
-		Created Jan 2010 by Jared Broad
+* QUANTCONNECT.COM: Equity Holding.cs
+* Equity Holding Class - Track orders, portfolio, cash, leverage etc.
 */
 
 /**********************************************************

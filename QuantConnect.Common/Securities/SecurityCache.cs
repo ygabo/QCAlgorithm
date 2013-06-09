@@ -1,6 +1,6 @@
 /*
-	STOCKTRACK.ORG - Automated Stock Trading, V0.8
-		Created Jan 2010 by Jared Broad
+* QUANTCONNECT.COM: Secuity Cache
+* Common caching class for storing historical ticks etc.
 */
 
 /**********************************************************

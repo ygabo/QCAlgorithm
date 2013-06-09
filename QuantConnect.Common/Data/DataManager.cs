@@ -1,20 +1,14 @@
 ﻿/*
 * QUANTCONNECT.COM - 
 * QC.Algorithm - Base Class for Algorithm.
-* Algorithm MarketType Manager - Collection of Securities
+* DataManager - Helper routines for the algorithm controller.
 */
 
 /**********************************************************
 * USING NAMESPACES
 **********************************************************/
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-
-using QuantConnect.Logging;
-using QuantConnect.Models;
 
 namespace QuantConnect.Models {
 

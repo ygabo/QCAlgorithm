@@ -1,7 +1,6 @@
 ﻿/*
-* QUANTCONNECT.COM - 
-* QC.Algorithm - Base Class for Algorithm.
-* Algorithm Portfolio Manager
+* QUANTCONNECT.COM - Portfolio Manager
+* Wrapper around securities list to give easy access to company objects Portfolio["IBM"].Holdings
 */
 
 /**********************************************************

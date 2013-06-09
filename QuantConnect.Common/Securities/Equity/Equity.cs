@@ -1,6 +1,6 @@
 ﻿/*
 * QUANTCONNECT.COM:
-* Market Class - Base class for 
+* Equity Class - Base class for Equity Security Types, Extension of Security.
 */
 
 /**********************************************************

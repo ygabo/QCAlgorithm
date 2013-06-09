@@ -1,23 +1,14 @@
 /*
-*       QUANTCONNECT.COM - 
-*       QC.Math Library of Statistics Routines for Algorithm
-*       Created by Jared Broad 19th November 2012
+*   QUANTCONNECT.COM - 
+*   QC.Statistics - Generate statistics on the equity and orders
 */
 
 /**********************************************************
  * USING NAMESPACES
  **********************************************************/
 using System;
-using System.Data;
-using System.Text;
-using System.IO;
 using System.Linq;
-using System.Diagnostics;
 using System.Collections.Generic;
-using System.Collections;
-using System.Globalization;
-using System.Threading;
-using System.Threading.Tasks;
 
 
 //QuantConnect Project Libraries:
@@ -30,7 +21,7 @@ namespace QuantConnect {
     * CLASS DEFINITIONS
     *********************************************************/
 
-    public partial class Statistics {
+    public class Statistics {
         /******************************************************** 
         * CLASS VARIABLES
         *********************************************************/
@@ -40,14 +31,15 @@ namespace QuantConnect {
         *********************************************************/
 
         /******************************************************** 
-        * CLASS METHODS gustavo was here !
+        * CLASS METHODS
         *********************************************************/
-
         /// <summary>
         /// Run a full set of orders and return a 
         /// </summary>
         /// <param name="equity">Equity value over time.</param>
         /// <param name="profitLoss">profit loss from trades</param>
+        /// <param name="startingCash">Amount of starting cash in USD </param>
+        /// <param name="fractionOfYears">Number of years as a double number 1 = 1 year. </param>
         /// <returns>Statistics Array, Broken into Annual Periods</returns>
         public static Dictionary<string, Dictionary<Statistic, decimal>> Generate(SortedDictionary<DateTime, decimal> equity, SortedDictionary<DateTime, decimal> profitLoss, decimal startingCash, double fractionOfYears = 1) { 
             

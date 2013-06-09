@@ -1,6 +1,6 @@
 ﻿/*
- * QUANTCONNECT.COM - Democratizing Finance, Empowering Individuals, V0.1
- * Created by Jared Broad
+* QUANTCONNECT.COM - Democratizing Finance, Empowering Individuals, V0.1
+* Extension helper methods on lists etc.
 */
 
 /**********************************************************
@@ -8,11 +8,6 @@
 **********************************************************/
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-using System.Threading;
-using System.Threading.Tasks;
 
 //QuantConnect Project Libraries:
 using QuantConnect.Logging;

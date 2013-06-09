@@ -1,7 +1,7 @@
 ﻿/*
 * QUANTCONNECT.COM - 
 * QC.Algorithm - Base Class for Algorithm.
-* Algorithm MarketType Manager - Collection of Securities
+* Sentiment base class object - for intangible data types.
 */
 
 /**********************************************************
@@ -10,11 +10,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using QuantConnect.Logging;
-using QuantConnect.Models;
 
 namespace QuantConnect.Models {
 

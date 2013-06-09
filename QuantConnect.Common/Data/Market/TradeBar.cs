@@ -1,7 +1,7 @@
 ﻿/*
 * QUANTCONNECT.COM - 
 * QC.Algorithm - Base Class for Algorithm.
-* Algorithm MarketType Manager - Collection of Securities
+* TradeBar Data Objects Second and Minute Summaries - Extension of Market Data classes - for tradable market objects
 */
 
 /**********************************************************
@@ -11,8 +11,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
 
 using QuantConnect;
 using QuantConnect.Logging;

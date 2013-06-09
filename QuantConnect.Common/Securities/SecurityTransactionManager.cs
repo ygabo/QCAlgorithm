@@ -1,9 +1,7 @@
 ﻿/*
-* QUANTCONNECT.COM - 
-* QC.Algorithm - Base Class for Algorithm.
-* Algorithm Transaction Recorder
+* QUANTCONNECT.COM: Transaction Manager
+* Transaction Manager Processes and Verifes orders.
 */
-
 /**********************************************************
 * USING NAMESPACES
 **********************************************************/

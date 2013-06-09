@@ -1,8 +1,7 @@
 /*
-	STOCKTRACK.ORG - Automated Stock Trading, v0.9
-		Created Jan 2010 by Jared Broad
+* QUANTCONNECT.COM: FOREX Holding Class
+* FOREX Holding Class - Track portfolio, holdings, leverage, cash
 */
-
 /**********************************************************
  * USING NAMESPACES
  **********************************************************/

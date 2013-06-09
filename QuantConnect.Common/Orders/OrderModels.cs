@@ -1,6 +1,6 @@
 ﻿/*
  * QUANTCONNECT.COM - 
- * QC.Common -- Common Data Structures, Interfaces, ENUMs
+ * Order Models -- Common enums and classes for orders
 */
 
 /**********************************************************
@@ -8,11 +8,6 @@
 **********************************************************/
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Reflection;
-using System.ComponentModel;
-using Newtonsoft.Json;
 
 namespace QuantConnect {
     

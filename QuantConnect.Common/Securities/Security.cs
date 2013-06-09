@@ -1,6 +1,6 @@
 ﻿/*
-* QUANTCONNECT.COM:
-* Market Class - Base class for 
+* QUANTCONNECT.COM: Security Object
+* This is a trable asset, that you build into a portfolio.
 */
 
 /**********************************************************

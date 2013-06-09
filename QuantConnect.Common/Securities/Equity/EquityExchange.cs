@@ -1,22 +1,12 @@
 /*
-	STOCKTRACK.ORG - Automated Stock Trading, v0.9
-		Created Jan 2010 by Jared Broad
+* QUANTCONNECT.COM: Equity Exchange.cs
+* Equity Exchange Class - Helper routine to determine if this asset type is currently open and tradable.
 */
 
 /**********************************************************
  * USING NAMESPACES
  **********************************************************/
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.IO;
-using System.Threading;
-using System.Diagnostics;
 
 //QuantConnect Libraries:
 using QuantConnect;

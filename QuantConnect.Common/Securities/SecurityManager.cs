@@ -1,7 +1,6 @@
 ﻿/*
 * QUANTCONNECT.COM - 
-* QC.Algorithm - Base Class for Algorithm.
-* Algorithm MarketType Manager - Collection of Securities
+* Algorithm SecurityManager - A Helper method for a Collection of Securities
 */
 
 /**********************************************************

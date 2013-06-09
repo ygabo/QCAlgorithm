@@ -1,7 +1,6 @@
 /*
-*       QUANTCONNECT.COM - 
-*       QC.Math Library of Statistics Routines for Algorithm
-*       Created by Jared Broad 19th November 2012
+* QUANTCONNECT.COM - 
+* QC.Math Library of Statistics Routines for Algorithm
 */
 
 /**********************************************************
@@ -10,13 +9,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Diagnostics;
 using System.Linq;
 
 //QuantConnect Project Libraries:
@@ -32,10 +24,6 @@ namespace QuantConnect {
         class QCStandardDeviation {
             /******************************************************** 
             * CLASS VARIABLES
-            *********************************************************/
-
-            /******************************************************** 
-            * CONSTRUCTOR/DELEGATE DEFINITIONS
             *********************************************************/
 
             /******************************************************** 

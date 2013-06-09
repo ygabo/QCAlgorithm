@@ -1,19 +1,13 @@
 ﻿/*
 * QUANTCONNECT.COM - 
 * QC.Algorithm - Base Class for Algorithm.
-* Algorithm MarketType Manager - Collection of Securities
+* Twitter Sentiment Data - Extension of Sentiment Data Type.
 */
 
 /**********************************************************
 * USING NAMESPACES
 **********************************************************/
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using QuantConnect.Logging;
 
 namespace QuantConnect.Models {
 

@@ -1,7 +1,8 @@
 /*
-	STOCKTRACK.ORG - Automated Stock Trading, V0.8
-		Created Jan 2010 by Jared Broad
+* QUANTCONNECT.COM: Equity Cache.cs
+* Equity Caching Class - Store online method calculations here, historical data points etc.
 */
+
 
 /**********************************************************
  * USING NAMESPACES

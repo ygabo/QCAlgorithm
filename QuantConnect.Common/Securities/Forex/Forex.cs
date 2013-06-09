@@ -1,6 +1,6 @@
 ﻿/*
 * QUANTCONNECT.COM:
-* Market Class - Base class for 
+* FOREX Class - Base class for FX Objects, Extension of Security
 */
 
 /**********************************************************
@@ -9,11 +9,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Drawing;
-
-//QuantConnect Libraries:
 using QuantConnect;
 using QuantConnect.Logging;
 using QuantConnect.Models;

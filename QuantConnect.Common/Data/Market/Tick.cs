@@ -1,7 +1,7 @@
 ﻿/*
 * QUANTCONNECT.COM - 
 * QC.Algorithm - Base Class for Algorithm.
-* Algorithm MarketType Manager - Collection of Securities
+* Tick base class. Extension of Market Data base class for tick resolution market items.
 */
 
 /**********************************************************
@@ -11,8 +11,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
 
 using QuantConnect.Logging;
 using QuantConnect.Models;

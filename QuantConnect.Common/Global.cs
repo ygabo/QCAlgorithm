@@ -1,6 +1,6 @@
 ﻿/*
  * QUANTCONNECT.COM - 
- * QC.Common -- Common Data Structures, Interfaces, ENUMs
+ * GLobal Enums
 */
 
 /**********************************************************

@@ -1,6 +1,6 @@
 ﻿/*
-* QUANTCONNECT.COM - 
-* QC.Data -- Common WebSocket Tools
+* QUANTCONNECT.COM: Interface for Security Transaction Model Classes
+* Implement this interface to define your own transaction model
 */
 
 /**********************************************************

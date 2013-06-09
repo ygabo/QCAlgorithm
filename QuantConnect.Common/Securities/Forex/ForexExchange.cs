@@ -1,6 +1,6 @@
 /*
-	STOCKTRACK.ORG - Automated Stock Trading, v0.9
-		Created Jan 2010 by Jared Broad
+* QUANTCONNECT.COM: FOREX Exchange
+* FOREX Exchange Class - Track if the FX market is open
 */
 
 /**********************************************************

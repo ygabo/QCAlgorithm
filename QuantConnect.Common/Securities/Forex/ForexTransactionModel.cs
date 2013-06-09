@@ -1,7 +1,6 @@
 ﻿/*
-* QUANTCONNECT.COM - 
-* QC.Algorithm - Base Class for Algorithm.
-* Algorithm Transaction Model
+* QUANTCONNECT.COM:
+* FOREX Transaction Model Class - Default Transaction Model for FX Data.
 */
 
 /**********************************************************

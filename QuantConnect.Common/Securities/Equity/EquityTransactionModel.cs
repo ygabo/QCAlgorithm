@@ -1,7 +1,6 @@
 ﻿/*
-* QUANTCONNECT.COM - 
-* QC.Algorithm - Base Class for Algorithm.
-* Algorithm Transaction Model
+* QUANTCONNECT.COM - Equity Transaction Model
+* Default Equities Transaction Model
 */
 
 /**********************************************************
