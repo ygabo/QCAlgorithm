@@ -21,7 +21,7 @@ namespace QuantConnect {
     * CLASS DEFINITIONS
     *********************************************************/
     /// <summary>
-    /// Example user algorithm class - if you can code 
+    /// Example user algorithm class - use this as a base point for your strategy.
     /// </summary>
     public class MyAlgorithm : QCAlgorithm {
 
