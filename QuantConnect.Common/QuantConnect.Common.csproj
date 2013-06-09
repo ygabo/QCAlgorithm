@@ -44,24 +44,8 @@
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AWSSDK, Version=1.4.15.1, Culture=neutral, PublicKeyToken=cd2d24cd2bace800, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\AWSSDK.dll</HintPath>
-    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>.\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="mysql.data">
-      <HintPath>.\mysql.data.dll</HintPath>
-    </Reference>
-    <Reference Include="mysql.data.entity">
-      <HintPath>.\mysql.data.entity.dll</HintPath>
-    </Reference>
-    <Reference Include="mysql.visualstudio">
-      <HintPath>.\mysql.visualstudio.dll</HintPath>
-    </Reference>
-    <Reference Include="mysql.web">
-      <HintPath>.\mysql.web.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>.\Newtonsoft.Json.dll</HintPath>

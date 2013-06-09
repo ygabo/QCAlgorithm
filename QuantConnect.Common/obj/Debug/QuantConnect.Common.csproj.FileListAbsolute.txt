@@ -7,3 +7,4 @@ C:\Server\www\QCo\QuantConnect.Common\bin\Debug\QuantConnect.Logging.xml
 C:\Server\www\QCo\QuantConnect.Common\obj\Debug\ResolveAssemblyReference.cache
 C:\Server\www\QCo\QuantConnect.Common\obj\Debug\QuantConnect.Common.dll
 C:\Server\www\QCo\QuantConnect.Common\obj\Debug\QuantConnect.Common.pdb
+C:\Server\www\QCo\QuantConnect.Common\bin\Debug\QuantConnect.Common.XML
