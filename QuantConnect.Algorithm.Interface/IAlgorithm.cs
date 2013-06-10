@@ -184,15 +184,8 @@ namespace QuantConnect  {
         /// <param name="year">integer year to end simulation period</param>
         /// <param name="month">integer month to end simulation period</param>
         /// <param name="day">integer day to end simulation period</param>
-        /// <exception cref="not found">Error thrown When date is invalid</exception>
         void SetEndDate(int year, int month, int day);
         void SetEndDate(DateTime end);
-
-
-        /// <summary>
-        /// Set the Transaction Models to use:
-        /// </summary>
-        void SetModels();
 
 
         /// <summary>

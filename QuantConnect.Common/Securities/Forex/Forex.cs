@@ -40,6 +40,7 @@ namespace QuantConnect.Securities {
             Cache = new ForexCache(this);
             Holdings = new ForexHolding(this);
             Exchange = new ForexExchange();
+            Model = new ForexTransactionModel();
         }
 
 

@@ -70,12 +70,6 @@
             <param name="year">integer year to end simulation period</param>
             <param name="month">integer month to end simulation period</param>
             <param name="day">integer day to end simulation period</param>
-            <exception cref="!:not found">Error thrown When date is invalid</exception>
-        </member>
-        <member name="M:QuantConnect.IAlgorithm.SetModels">
-            <summary>
-            Set the Transaction Models to use:
-            </summary>
         </member>
         <member name="M:QuantConnect.IAlgorithm.SetLocked">
             <summary>

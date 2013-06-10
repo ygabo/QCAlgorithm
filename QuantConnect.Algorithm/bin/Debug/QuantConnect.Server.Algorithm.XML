@@ -73,11 +73,6 @@
             </summary>
             <param name="startingCash">Minimum required cash</param>
         </member>
-        <member name="M:QuantConnect.QCAlgorithm.SetModels">
-            <summary>
-            Set the Transaction Models: allow user to override the default transaction models
-            </summary>
-        </member>
         <member name="M:QuantConnect.QCAlgorithm.SetStartDate(System.Int32,System.Int32,System.Int32)">
             <summary>
             Wrapper for SetStartDate(DateTime). Set the start date for simulation.

@@ -267,44 +267,6 @@ namespace QuantConnect {
 
 
         /// <summary>
-        /// Set the Transaction Models: allow user to override the default transaction models
-        /// </summary>
-        public virtual void SetModels() 
-        {
-            try
-            {
-                //Define the transaction and fill models we'd like our securities to use.
-                //Users can generate their own models by implementing the Interface ISecurityTransactionModel.
-
-                foreach (string symbol in Securities.Keys)
-                {
-                    switch (Securities[symbol].Type)
-                    {
-                        //Currently only have equity data.
-                        case SecurityType.Equity:
-                            Securities[symbol].Model = new EquityTransactionModel();
-                            break;
-
-                        //FOREX data coming soon.
-                        case SecurityType.Forex:
-                            Securities[symbol].Model = new ForexTransactionModel();
-                            break;
-                    }
-                }
-                //Custom example of transaction model for a penny stock: 
-                // ->   You can derive a transaction model for a single company if required.
-                //      Securities["PENNY"].Model = new PennyStockTransactionModel();
-                //      public class PennyStockTransactionModel : ISecurityTransactionModel { ... }
-            }
-            catch (Exception err)
-            {
-                throw new Exception("Algorithm.SetModels(): " + err.Message);
-            }
-        }
-
-
-
-        /// <summary>
         /// Wrapper for SetStartDate(DateTime). Set the start date for simulation.
         /// Must be less than end date.
         /// </summary>

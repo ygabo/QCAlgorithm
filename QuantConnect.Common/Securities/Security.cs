@@ -127,6 +127,9 @@ namespace QuantConnect.Securities {
             Holdings = new SecurityHolding(this);
             Exchange = new SecurityExchange();
 
+            //Cannot initalise a default model.
+            Model = null;
+
             //Set data type:
             if (resolution == Resolution.Minute || resolution == Resolution.Second) {
                 _dataType = typeof(TradeBar);

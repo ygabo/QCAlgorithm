@@ -45,6 +45,9 @@ namespace QuantConnect.Securities {
             Cache = new EquityCache(this);
             Holdings = new EquityHolding(this);
             Exchange = new EquityExchange();
+
+            //Set the Transaction Model
+            Model = new EquityTransactionModel();
         }
 
 
