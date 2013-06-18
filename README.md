@@ -1,5 +1,4 @@
 # QCAlgorithm
-===========
 
 ## Introduction
 
@@ -20,3 +19,11 @@ Feel free to extend this class and recommend additions / modifications to the AP
 ## Full API Documentation
 
 See http://www.quantconnect.com/docs for more information.
+
+## License
+
+Provided with the Apache 2.0 license.
+
+## Help
+
+Feel free to reach out to the QC Team -- contact@quantconnect.com
